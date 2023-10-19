@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">view-examples</string>
+    <string name="textview">TextView</string>
+    <string name="edittext">EditText</string>
+    <string name="button">Button</string>
+    <string name="spinner">Spinner</string>
+    <string-array name="color_choices">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+</resources>
