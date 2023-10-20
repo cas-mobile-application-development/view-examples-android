@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonButton: Button
     private lateinit var buttonSwitch: Button
     private lateinit var buttonSpinner: Button
+    private lateinit var buttonConstraintLayout: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         buttonButton = findViewById(R.id.button_button)
         buttonSwitch = findViewById(R.id.button_switch)
         buttonSpinner = findViewById(R.id.button_spinner)
+        buttonConstraintLayout = findViewById(R.id.button_constraint_layout)
     }
 
     override fun onResume() {
@@ -40,6 +42,9 @@ class MainActivity : AppCompatActivity() {
         buttonSpinner.setOnClickListener {
             startActivity(SpinnerActivity::class)
         }
+        buttonConstraintLayout.setOnClickListener {
+            startActivity(ConstraintLayoutActivity::class)
+        }
     }
 
     override fun onPause() {
@@ -49,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         buttonButton.setOnClickListener(null)
         buttonSwitch.setOnClickListener(null)
         buttonSpinner.setOnClickListener(null)
+        buttonConstraintLayout.setOnClickListener(null)
     }
 
     private fun startActivity(clazz: KClass<*>) {

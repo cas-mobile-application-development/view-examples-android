@@ -41,4 +41,12 @@
         android:text="@string/spinner"
     />
 
+    <Button
+        android:id="@+id/button_constraint_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/constraintlayou
+        t"
+    />
+
 </LinearLayout>
