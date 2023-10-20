@@ -4,6 +4,7 @@
     <string name="edittext">EditText</string>
     <string name="button">Button</string>
     <string name="spinner">Spinner</string>
+    <string name="switch_button">Switch</string>
     <string-array name="color_choices">
         <item>Red</item>
         <item>Green</item>

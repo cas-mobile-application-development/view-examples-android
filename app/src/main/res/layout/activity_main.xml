@@ -28,6 +28,13 @@
     />
 
     <Button
+        android:id="@+id/button_switch"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/switch_button"
+    />
+
+    <Button
         android:id="@+id/button_spinner"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"

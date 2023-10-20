@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonTextView: Button
     private lateinit var buttonEditText: Button
     private lateinit var buttonButton: Button
+    private lateinit var buttonSwitch: Button
     private lateinit var buttonSpinner: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         buttonTextView = findViewById(R.id.button_textview)
         buttonEditText = findViewById(R.id.button_editText)
         buttonButton = findViewById(R.id.button_button)
+        buttonSwitch = findViewById(R.id.button_switch)
         buttonSpinner = findViewById(R.id.button_spinner)
     }
 
@@ -32,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         buttonButton.setOnClickListener {
             startActivity(ButtonActivity::class)
         }
+        buttonSwitch.setOnClickListener {
+            startActivity(SwitchActivity::class)
+        }
         buttonSpinner.setOnClickListener {
             startActivity(SpinnerActivity::class)
         }
@@ -42,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         buttonTextView.setOnClickListener(null)
         buttonEditText.setOnClickListener(null)
         buttonButton.setOnClickListener(null)
+        buttonSwitch.setOnClickListener(null)
         buttonSpinner.setOnClickListener(null)
     }
 
